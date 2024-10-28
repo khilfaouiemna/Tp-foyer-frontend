@@ -1,0 +1,22 @@
+<div *ngIf="universites.length" class="universite-list-container">
+  <h2 class="universite-title">Liste des Universités</h2>
+  <table class="universite-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Adresse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let universite of universites">
+        <td>{{ universite.idUniversite }}</td>
+        <td>{{ universite.nomUniversite }}</td>
+        <td>{{ universite.adresse }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="!universites.length" class="no-universite-message">
+  <p>Aucune université trouvée.</p>
+</div>
