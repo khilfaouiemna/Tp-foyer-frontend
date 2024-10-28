@@ -12,7 +12,7 @@ interface Universite {
   providedIn: 'root'
 })
 export class UniversiteService {
-  private apiUrl = 'http://localhost:8089/tpfoyer/universite/retrieve-all-universites';
+  private apiUrl = 'http://192.168.50.4:8089/tpfoyer/universite/retrieve-all-universites';
 
   constructor(private http: HttpClient) {}
 
