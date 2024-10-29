@@ -15,7 +15,7 @@ export class UniversiteService {
   private apiUrl = 'http://192.168.50.4:8089/tpfoyer/universite/retrieve-all-universites';
 
   constructor(private http: HttpClient) {}
-
+//hellooooooooooooooooooooooooooooooo
   getUniversites(): Observable<Universite[]> {
     return this.http.get<Universite[]>(this.apiUrl);
   }
