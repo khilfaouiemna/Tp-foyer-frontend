@@ -3,16 +3,16 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 interface Universite {
-  idUniversite: number;
-  nomUniversite: string;
-  adresse: string;
+  idChambre: number;
+  numeroChambre: number;
+  typeC: string;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class UniversiteService {
-  private apiUrl = 'http://192.168.50.4:8089/tpfoyer/universite/retrieve-all-universites';
+  private apiUrl = 'http://192.168.186.130:8089/tpfoyer/chambre/retrieve-all-chambres';
 
   constructor(private http: HttpClient) {}
 

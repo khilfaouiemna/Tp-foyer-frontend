@@ -7,14 +7,14 @@ import { UniversiteService } from '../../services/universite.service';
   styleUrls: ['./universite-list.component.css']
 })
 export class UniversiteListComponent implements OnInit {
-  universites: any[] = [];
+  chambres: any[] = [];
 
   constructor(private universiteService: UniversiteService) {}
 
   ngOnInit(): void {
     this.universiteService.getUniversites().subscribe(
       (data) => {
-        this.universites = data;
+        this.chambres = data;
       },
       (error) => {
         console.error('Erreur lors de la récupération des universités:', error);
